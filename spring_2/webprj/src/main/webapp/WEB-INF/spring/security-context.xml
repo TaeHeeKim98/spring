@@ -7,13 +7,5 @@
         http://www.springframework.org/schema/mvc
         https://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <bean name="/index" class="com.newlecture.web.controller.IndexController" />
-    
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-    	<property name="prefix" value="WEB-INF/view/"></property>
-    	<property name="suffix" value=".jsp"></property>
-    </bean>
-    
-    <mvc:resources location="/static/" mapping="/**"></mvc:resources>
     
 </beans>
