@@ -3,6 +3,7 @@
     
 	<!-- content 부분 -->
 
+
     <div id="visual" class="">
         <div class="content-container">
             <h2 class="hidden">신규 강좌목록</h2>
