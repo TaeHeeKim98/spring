@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -19,11 +20,12 @@ public class NoticeController {
 	private NoticeService noticeService;
 	
 	@RequestMapping("list")
-	public String list(@RequestParam(value = "p", defaultValue = "1") Integer page) throws ClassNotFoundException, SQLException {
+	public String list(@RequestParam(value = "p", defaultValue = "1") Integer page, Model model) throws ClassNotFoundException, SQLException {
 		//string p = rquest.getParameter("p")
 		System.out.println("page : " + page);
 		
-		//List<Notice> lsit = noticeService.getList(1, "TITLE", "");
+		List<Notice> lsit = noticeService.getList(1, "TITLE", "");
+		model.addAttribute("list", lsit);
 		
 		return "notice.list";
 	}
