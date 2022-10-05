@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.newlecture.web.dao.NoticeDao">
+	<select id="getList" resultType="com.newlecture.web.entity.NoticeView">
+		SELECT * FROM noticeview 
+		where ${field} like '%${query}%' 
+		order by regdate desc 
+		limit #{offset}, #{size}
+	</select>
+	
+	<select id="getCount">
+		SELECT count(id) count FROM notice
+		where ${field} like '%${query}%' 
+	</select>
+	<select id="getView" resultType="com.newlecture.web.entity.NoticeView">
+		SELECT * FROM noticeview 
+		where id=#{id}
+	</select>
+</mapper>

@@ -1,20 +1,20 @@
 package com.newlecture.web.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class HomeController {
 	
 	@RequestMapping("/index")
 	public String adsf() {
 		
-		return "Hello Spring Boot";
+		return "home.index";
 	}
 	
-	@RequestMapping("/aabb")
+	@RequestMapping("/help")
 	public String aaa() {
 		
-		return "aaaa";
+		return "home.help";
 	}
 }

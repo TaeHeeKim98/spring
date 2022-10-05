@@ -46,8 +46,9 @@
 								<br>
 							</div>
 							<div>
-								<a href="http://www.newlecture.com/resource/spring2.zip"><b><u><font
-											size="5" color="#dd8a00">예제 다운로드하기</font></u></b></a>
+								<a href="http://www.newlecture.com/resource/spring2.zip"><b><u>
+											<font size="5" color="#dd8a00">예제 다운로드하기</font>
+									</u></b></a>
 							</div>
 							<div>
 								<br>
@@ -62,30 +63,24 @@
 		</div>
 	
 		<div class="margin-top text-align-center">
-			<a class="btn btn-list" href="list.html">목록</a>
+			<a class="btn-text btn-cancel" href="list.html">목록</a> <a
+				class="btn-text btn-default" href="edit.html">수정</a> <a
+				class="btn-text btn-default" href="del.html">삭제</a>
 		</div>
 	
 		<div class="margin-top">
 			<table class="table border-top-default">
 				<tbody>
-	
 					<tr>
 						<th>다음글</th>
 						<td colspan="3" class="text-align-left text-indent">다음글이 없습니다.</td>
 					</tr>
-	
-	
-	
-	
 					<tr>
 						<th>이전글</th>
 						<td colspan="3" class="text-align-left text-indent"><a
 							class="text-blue text-strong" href="">스프링 DI 예제 코드</a></td>
 					</tr>
-	
-	
 				</tbody>
 			</table>
 		</div>
-	
 	</main>
